@@ -1,0 +1,40 @@
+/* local_openai_assistant/styles.css */
+#openai-chat-button {
+  background-color: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#openai-chat-window {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+#openai-chat-window button {
+  background-color: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.chat-message {
+  margin: 5px 0;
+}
+
+.chat-message.user {
+  text-align: right;
+}
+
+.chat-message.assistant {
+  text-align: left;
+}
+
+.chat-message.error {
+  color: red;
+}
