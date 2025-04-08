@@ -1,5 +1,4 @@
 // local_chatassistant/amd/src/chatbutton.js
-
 define(['jquery'], function($) {
   return {
       init: function() {

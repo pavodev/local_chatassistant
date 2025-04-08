@@ -1,4 +1,4 @@
-/* local_openai_assistant/styles.css */
+/* local_chatassistant/styles.css */
 #openai-chat-button {
   background-color: #0073aa;
   color: #fff;
@@ -23,6 +23,19 @@
   cursor: pointer;
 }
 
+.chat-markdown pre {
+  background-color: #f6f8fa;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+.chat-markdown code {
+  font-family: monospace;
+  background-color: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
 .chat-message {
   margin: 5px 0;
 }
@@ -37,4 +50,26 @@
 
 .chat-message.error {
   color: red;
+}
+
+.chat-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin: 10px;
+}
+
+.chat-loader::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 3px solid #ccc;
+  border-top-color: #0073e6;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }

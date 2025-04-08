@@ -1,5 +1,5 @@
 <?php
-// local_openai_assistant/version.php
+// local_chatassistant/version.php
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_chatassistant';
